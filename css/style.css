@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Futura Heavy";
+    src: url("../fonts/Futura\ Heavy.ttf") format('ttf');
+}
+
+body {
+    font-family: 'Futura Heavy', serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*HEADER*/
+img,
+.menu {
+    background-image: url("../picture/FOND_BLEU.jpg");
+    width: 100%;
+}
+
+img,
+main,
+footer {
+    margin-left: 250px;
+}
+
+img {
+    height: 15rem;
+    width: 80%;
+
+
+}
+
+ul {}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+    /*margin-left: -250px;*/
+    width: 250px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    color: white;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 3px solid red;
+    padding-bottom: 1rem;
+}
+
+.nav {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links {
+    margin-top: 2rem;
+    text-transform: uppercase;
+
+
+}
+
+.nav-items {
+    font-size: 1.2rem;
+    background-color: #b5c7f7;
+    margin: 0.2em;
+    padding: 1em;
+    border-radius: 0.5em;
+    transition-duration: 300ms;
+}
+
+/* MAIN */
+main {
+    padding: 1rem;
+}
+
+p {
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
