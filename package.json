@@ -4,7 +4,8 @@
   "description": "- Une page de présentation de l'académie - Un formulaire de contact - un formulaire d'inscription",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-dev index.js"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,9 @@
 @font-face {
     font-family: "Futura Heavy";
+    src: url('../fonts/Futura\ Std\ Heavy.ttf');
     src: url("../fonts/Futura\ Heavy.ttf") format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
