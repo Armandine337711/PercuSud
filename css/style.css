@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "Futura Heavy";
+    font-family: "Futura";
     src: url('../fonts/Futura\ Heavy.ttf');
     src: url('../fonts/Futura\ Heavy.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
 }
 
 body {
-    font-family: 'Futura Heavy', serif;
+    font-family: 'Futura', serif;
+    font-weight: normal;
+    font-style: normal;
     max-width: 1200px;
     margin: auto;
 }
@@ -40,7 +40,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     padding: 0.5em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
 }
 
 .menu {
@@ -64,6 +64,7 @@ h1 {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    font-family: 'Futura';
 }
 
 .nav-links {
