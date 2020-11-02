@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Futura Heavy";
-    src: url('../fonts/Futura\ Std\ Heavy.ttf');
-    src: url("../fonts/Futura\ Heavy.ttf") format('ttf');
+    src: url('../fonts/Futura\ Heavy.ttf');
+    src: url('../fonts/Futura\ Heavy.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,8 +15,9 @@ body {
 /*HEADER*/
 img,
 .menu {
-    background-image: url("../picture/FOND_BLEU.jpg");
+    /* background-image: url("../picture/FOND_BLEU.jpg");*/
     width: 100%;
+
 }
 
 img,
