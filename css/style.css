@@ -1,94 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800;900&display=swap');
+
 @font-face {
     font-family: "Futura";
-    src: url('../fonts/Futura\ Heavy.ttf');
-    src: url('../fonts/Futura\ Heavy.ttf') format('ttf');
+    src: url('../fonts/futura/Futura\ Book.ttf');
+    src: url('../fonts/futura/Futura\ Book.ttf') format('ttf');
+
 }
 
-body {
-    font-family: 'Futura', serif;
+@font-face {
+    font-family: "Futura";
+    src: url('../fonts/futura/Futura\ Bold.ttf');
+    src: url('../fonts/futura/Futura\ Bold.ttf') format('ttf');
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url('../fonts/futura/Futura\ Heavy.ttf');
+    src: url('../fonts/futura/Futura\ Heavy.ttf') format('ttf');
+    font-weight: bolder;
+
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url('../fonts/futura/Futura\ Medium.ttf');
+    src: url('../fonts/futura/Futura\ Medium.ttf') format('ttf');
+    font-weight: initial;
+}
+
+*/ body {
+
+
     font-weight: normal;
     font-style: normal;
-    max-width: 1200px;
     margin: auto;
+    font-family: 'Mukta', sans-serif;
+}
+
+*/ .container {
+    margin: auto;
+
+
 }
 
 /*HEADER*/
-img,
+
 .menu {
-    /* background-image: url("../picture/FOND_BLEU.jpg");*/
+    background-image: url("../picture/FOND_BLEU.jpg");
     width: 100%;
 
 }
 
-img,
-main,
-footer {
-    margin-left: 250px;
-}
+
+
 
 img {
-    height: 15rem;
-    width: 80%;
-
-
+    width: 105%;
+    height: auto;
 }
 
-ul {}
+
 
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     padding: 0.5em;
-    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+    font-family: 'Mukta', sans-serif;
+    font-weight: 900;
 }
 
+
 .menu {
-    /*margin-left: -250px;*/
+
     width: 250px;
-    border-right: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid #b5c7f7;
     position: fixed;
     top: 0;
     height: 100vh;
     color: white;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 900;
+
 }
 
 .title {
     font-size: 2em;
     font-weight: bold;
-    border-bottom: 3px solid red;
+
     padding-bottom: 1rem;
+    padding: 1.5rem;
 }
 
 .nav {
-    padding: 2rem;
+
     display: flex;
     flex-direction: column;
-    font-family: 'Futura';
+
 }
 
 .nav-links {
     margin-top: 2rem;
     text-transform: uppercase;
+    border: 2px sold #f0f;
+
 
 
 }
 
 .nav-items {
     font-size: 1.2rem;
-    background-color: #b5c7f7;
-    margin: 0.2em;
+
+
     padding: 1em;
-    border-radius: 0.5em;
-    transition-duration: 300ms;
+    border-bottom: 1.5px solid #b5c7f7;
+
+    /*transition-duration: 300ms;*/
+
+
+}
+
+.nav-items-link {
+    color: #b5c7f7;
+    text-decoration: none;
+
+
+}
+
+footer,
+footer a {
+    margin-top: 5rem;
+    color: white;
+    text-align: center;
 }
 
 /* MAIN */
 main {
     padding: 1rem;
+    margin-left: 250px;
+    font-family: 'Futura', sans-serif;
 }
+
 
 p {
     padding: 0.5rem;
     font-size: 1.5em;
+
+
+
 }
