@@ -52,6 +52,7 @@ body {
     /*background-image: url("../picture/FOND_BLEU.jpg");*/
     width: 100%;
     background-color: #fff;
+    color: black;
 
 }
 
@@ -82,7 +83,7 @@ h1 {
     position: fixed;
     top: 0;
     height: 100vh;
-    color: white;
+
     font-family: 'Mukta', sans-serif;
     font-weight: 900;
 
@@ -114,6 +115,7 @@ h1 {
     border-top: 1.5px solid #b5c7f7;
     margin-top: 1.5rem;
     text-transform: uppercase;
+
 }
 
 .nav-items {
@@ -131,6 +133,7 @@ h1 {
 .nav-items-link {
     /*color: #b5c7f7;*/
     text-decoration: none;
+    color: black;
 
 
 }
@@ -148,7 +151,7 @@ h1 {
 .footer_nav,
 .footer_nav a {
     margin-top: 5rem;
-    color: white;
+    color: black;
     text-align: center;
     font-size: 1rem;
     position: relative;
