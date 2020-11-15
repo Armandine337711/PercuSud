@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Armandine337711/PercuSud/issues"
   },
-  "homepage": "https://github.com/Armandine337711/PercuSud#readme"
+  "homepage": "https://github.com/Armandine337711/PercuSud#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5"
+  }
 }

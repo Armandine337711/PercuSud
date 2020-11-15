@@ -9,7 +9,6 @@
 ### Définition des utilisateurs
 
 - Visiteur
-- Musicien
 - Administrateur
 
 ### On veut
