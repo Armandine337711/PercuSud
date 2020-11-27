@@ -7,7 +7,16 @@ const sequelize = require('../database');
 class People extends Model {}
 
 Article.init({
-    identity: {
+    firstname: {
+        types: DataTypes.TEXT,
+        allownull: false,
+        validate: {
+            notEmpty: {
+                msg: `Il faut saisir un prénom`
+            }
+        }
+    },
+    lastname: {
         types: DataTypes.TEXT,
         allownull: false,
         validate: {

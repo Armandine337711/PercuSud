@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS "page"(
 );
 
 CREATE TABLE IF NOT EXISTS "article"(
-    'id' SERIAL PRIMARY KEY,
+    "id" SERIAL PRIMARY KEY,
     "title" TEXT NOT NULL,
     "content" TEXT NOT NULL,
     "created_at" TIMESTAMP NOT NULL DEFAULT NOW(),
@@ -34,15 +34,19 @@ CREATE TABLE IF NOT EXISTS "people"(
     "lastname" TEXT NOT NULL,
     "photo" TEXT,
     "presentation" TEXT,
-    "role_id" INT NOT NULL REFERENCES "role"("id")
+    "role_id" INT NOT NULL REFERENCES "role"("id"),
+    "created_at" TIMESTAMP NOT NULL DEFAULT NOW(),
+    "updated_at" TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
-CREATE IF NOT EXISTS "formule"(
+CREATE TABLE IF NOT EXISTS "formule"(
     "id" SERIAL PRIMARY KEY,
     "title" TEXT NOT NULL,
-    "price" MONEY NOT NULL,
+    "price" DECIMAL NOT NULL,
     CHECK ("price" > 0),
-)
+    "created_at" TIMESTAMP NOT NULL DEFAULT NOW(),
+    "updated_at" TIMESTAMP NOT NULL DEFAULT NOW()
+);
 
 CREATE TABLE IF NOT EXISTS "parent"(
     "id" SERIAL PRIMARY KEY,
@@ -55,8 +59,9 @@ CREATE TABLE IF NOT EXISTS "parent"(
     "city" TEXT NOT NULL,
     "phone" INT NOT NULL,
     "mail" TEXT UNIQUE NOT NULL,
-    "formule_id" INT NOT NULL
-    
+    "created_at" TIMESTAMP NOT NULL DEFAULT NOW(),
+    "updated_at" TIMESTAMP NOT NULL DEFAULT NOW()
+);
 
 CREATE TABLE IF NOT EXISTS "student"(
     "id" SERIAL PRIMARY KEY,
@@ -69,7 +74,10 @@ CREATE TABLE IF NOT EXISTS "student"(
     "city" TEXT NOT NULL,
     "phone" INT NOT NULL,
     "mail" TEXT UNIQUE NOT NULL,
-    "formule_id" INT NOT NULL,
-    "parent_id" INT
-)
+    "formule_id" INT NOT NULL REFERENCES "formule"("id"),
+    "parent_id" INT REFERENCES "parent"("id"),
+    "created_at" TIMESTAMP NOT NULL DEFAULT NOW(),
+    "updated_at" TIMESTAMP NOT NULL DEFAULT NOW()
+);
+COMMIT TRANSACTION;
 

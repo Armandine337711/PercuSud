@@ -102,3 +102,5 @@ Article.init({
     tableName: 'parent',
     sequelize
 })
+
+module.exports = Parent;

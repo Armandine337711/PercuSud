@@ -104,4 +104,6 @@ Student.init({
 }, {
     tableName: 'student',
     sequelize
-})
+});
+
+module.exports = Student;

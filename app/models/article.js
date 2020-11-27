@@ -28,6 +28,9 @@ Article.init({
                 msg: `L'article doit avoir un contenu`
             }
         }
+    },
+    published: {
+        type: DataTypes.BOOLEAN
     }
 
 

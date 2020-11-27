@@ -16,9 +16,12 @@ Page.init({
             }
         }
     },
-    description: {
+    subtitle: {
         type: DataTypes.TEXT,
 
+    },
+    published: {
+        types: DataTypes.BOOLEAN
     }
 }, {
     tableName: 'page',

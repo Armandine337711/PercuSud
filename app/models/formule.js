@@ -13,7 +13,9 @@ Article.init({
         unique: true
     },
     price: {
-        type: DataTypes.FLOAT
+        type: DataTypes.DECIMAL,
+        allowNull: false
+
 
     }
 
