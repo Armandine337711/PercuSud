@@ -12,7 +12,6 @@ student(id SERIAL, nom TEXT NOT NULL, prenom TEXT NOT NULL, date_naissance DATEN
 
 parent(id SERIAl, nom TEXT NOT NULL, prenom TEXT NOT NULL, __mail TEXT NOT NULL__)
 
-student_has_parent(student(#eleve(id), #parent(id))
 
 ## Notes
 
