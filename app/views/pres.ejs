@@ -1,16 +1,34 @@
 <%- include('partials/header') %>
 
-<main class="main">
-    <h1>Les Profs</h1>
-    <p>PAGE DES PROFS</p>
-    <% profs.forEach(prof => { %>
-    <p>
-        <%= prof.firstname %>
-    </p>
-    <% }) %>
+<h1>Les gens</h1>
+
+<p>PAGE DES PROFS</p>
+
+<% for (let i = 0; i < profs.length; i++) { %>
+<div class="people">
+    <img src="/picture/teachers/<%= profs[i].photo %>" alt="<%= profs[i].firstname %>" class="imgPeople">
+    <div class="people_presentation">
+        <p><%= profs[i++].firstname %> <%= profs.lastname %> </p>
+        <p><%= profs.presentation %> </p>
+    </div>
+
+</div>
 
 
+<%# ici le if, au cas où ma table comporterait un nombre impair de données %>
+<% if (profs[i]) { %>
+<div class="people">
+    <div class="people_presentation">
+        <p><%= profs[i].firstname %> <%= profs.lastname %> </p>
+        <p><%= profs.presentation %> </p>
+    </div>
+    <img src="/picture/teachers/<%= profs[i].photo %>" alt="<%= profs[i].firstname %>" class="imgPeople">
 
-</main>
+</div>
+<% } %>
+
+<% } %>
+
+
 
 <%- include('partials/footer') %>

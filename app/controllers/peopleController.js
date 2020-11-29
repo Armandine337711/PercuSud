@@ -4,15 +4,26 @@ const {
 
 peopleController = {
     profs: async (request, response, next) => {
-        try {
-            const profs = await People.findAll();
-            response.render('pres', {
-                profs
-            });
-        } catch (error) {
-            console.log(error)
-            response.status(500).send(error);
+
+        const profs = await People.findAll();
+        for (let i = 0; i < profs.length; i++) {
+
+            console.log(profs[i++].photo);
+            if (profs[i]) {
+                console.log(profs[i].photo)
+            }
+
+            console.log('--------------')
         }
+
+
+
+
+
+        response.render('pres', {
+            profs
+        })
+
 
 
 
