@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<main class="main">
+    <h1>Les Profs</h1>
+    <p>PAGE DES PROFS</p>
+    <% profs.forEach(prof => { %>
+    <p>
+        <%= prof.firstname %>
+    </p>
+    <% }) %>
+
+
+
+</main>
+
+<%- include('partials/footer') %>

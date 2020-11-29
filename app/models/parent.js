@@ -6,7 +6,7 @@ const sequelize = require('../database');
 
 class Parent extends Model {}
 
-Article.init({
+Parent.init({
     firstname: {
         type: DataTypes.TEXT,
         allowNulls: false,

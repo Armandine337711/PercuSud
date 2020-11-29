@@ -6,7 +6,7 @@ const sequelize = require('../database');
 
 class Formule extends Model {}
 
-Article.init({
+Formule.init({
     formule: {
         type: DataTypes.TEXT,
         allowNull: false,
@@ -20,7 +20,7 @@ Article.init({
     }
 
 }, {
-    tableName: 'article',
+    tableName: 'formule',
     sequelize
 });
 

@@ -5,7 +5,7 @@ const {
 } = require('sequelize');
 const sequelize = require('../database');
 
-class Student extends Models {};
+class Student extends Model {};
 
 
 Student.init({

@@ -6,9 +6,9 @@ const sequelize = require('../database');
 
 class People extends Model {}
 
-Article.init({
+People.init({
     firstname: {
-        types: DataTypes.TEXT,
+        type: DataTypes.TEXT,
         allownull: false,
         validate: {
             notEmpty: {
@@ -17,7 +17,7 @@ Article.init({
         }
     },
     lastname: {
-        types: DataTypes.TEXT,
+        type: DataTypes.TEXT,
         allownull: false,
         validate: {
             notEmpty: {
@@ -26,17 +26,14 @@ Article.init({
         }
     },
     photo: {
-        types: DataTypes.TEXT,
+        type: DataTypes.TEXT,
         /* Trouver un moyen de vérifier l'extension du fichier */
     },
     presentation: {
         type: DataTypes.TEXT,
 
-    },
-    role: {
-        type: DataTypes.TEXT
-
     }
+
 }, {
     tableName: 'people',
     sequelize

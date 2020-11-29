@@ -1,5 +1,5 @@
 const {
-    Mode,
+    Model,
     DataTypes
 } = require('sequelize');
 const sequelize = require('../database');
@@ -21,7 +21,7 @@ Page.init({
 
     },
     published: {
-        types: DataTypes.BOOLEAN
+        type: DataTypes.BOOLEAN
     }
 }, {
     tableName: 'page',

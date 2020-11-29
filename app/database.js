@@ -1,6 +1,6 @@
 const {
     Sequelize
-} = require("sequelize/types");
+} = require("sequelize");
 
 const sequelize = new Sequelize(process.env.PG_URL, {
     define: {

@@ -11,26 +11,26 @@ const Article = require('./article');
 // ----------------
 Page.hasMany(Article, {
     foreignKey: 'page_id',
-    as: pages
+    as: 'pages'
 });
 
 Article.belongsTo(Page, {
     foreignKey: 'page_id',
-    as: articles
+    as: 'articles'
 })
 
 // ----------------
 // Relation people-role
 // ----------------
 
-People.hasMany(Role, {
+Role.hasMany(People, {
     foreignKey: 'role_id',
-    as: 'people'
+    as: 'choucroute'
 });
 
-Role.belongsTo(People, {
+People.belongsTo(Role, {
     foreignKey: 'role_id',
-    as: 'role'
+    as: 'pdt'
 });
 
 // ----------------
@@ -39,12 +39,12 @@ Role.belongsTo(People, {
 
 Formule.hasMany(Student, {
     foreignKey: 'formule_id',
-    as: formules
+    as: 'formules'
 });
 
 Student.belongsTo(Formule, {
     foreignKey: 'formule_id',
-    as: student
+    as: 'student'
 });
 
 // ----------------
@@ -53,12 +53,12 @@ Student.belongsTo(Formule, {
 
 Parent.hasMany(Student, {
     foreignKey: 'parent_id',
-    as: parents
+    as: 'parents'
 });
 
 Student.belongsTo(Parent, {
     foreignKey: 'parent_id',
-    as: students
+    as: 'students'
 });
 
 module.exports = {
