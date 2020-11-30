@@ -2,14 +2,20 @@
 
 <h1>Les gens</h1>
 
-<p>PAGE DES PROFS</p>
 
 <% for (let i = 0; i < profs.length; i++) { %>
 <div class="people">
-    <img src="/picture/teachers/<%= profs[i].photo %>" alt="<%= profs[i].firstname %>" class="imgPeople">
+    <p class="imgPeople_container"><img src="/picture/teachers/<%= profs[i].photo %>" alt="<%= profs[i].firstname %>"
+            class="imgPeople"></p>
+
     <div class="people_presentation">
-        <p><%= profs[i++].firstname %> <%= profs.lastname %> </p>
-        <p><%= profs.presentation %> </p>
+        <p class="people_identity"><%= profs[i].firstname %> <%= profs[i].lastname %> </p>
+        <% prez = profs[i++].presentation.split('%');
+        prez.forEach(element => { %>
+        <p><%= element %> </p>
+        <% }) %>
+
+
     </div>
 
 </div>
@@ -17,12 +23,18 @@
 
 <%# ici le if, au cas où ma table comporterait un nombre impair de données %>
 <% if (profs[i]) { %>
-<div class="people">
+<div class="people people--reverse">
+    <p class="imgPeople_container"><img src="/picture/teachers/<%= profs[i].photo %>" alt="<%= profs[i].firstname %>"
+            class="imgPeople"></p>
+
     <div class="people_presentation">
-        <p><%= profs[i].firstname %> <%= profs.lastname %> </p>
-        <p><%= profs.presentation %> </p>
+        <p><%= profs[i].firstname %> <%= profs[i].lastname %> </p>
+        <% prez = profs[i].presentation.split('%');
+        prez.forEach(element => { %>
+        <p><%= element %> </p>
+        <% }) %>
     </div>
-    <img src="/picture/teachers/<%= profs[i].photo %>" alt="<%= profs[i].firstname %>" class="imgPeople">
+
 
 </div>
 <% } %>

@@ -178,21 +178,35 @@ p {
 
 /* PAGES PEOPLE */
 .people {
-    display: flex
+    display: flex;
+    border: solid 2px;
+    margin-top: 2rem;
+    width: 80%;
+    padding: 2rem;
+    justify-content: start;
+}
+
+.imgPeople_container {
+    width: 20%;
 }
 
 .imgPeople {
-    display: block;
-    width: 15%;
 
+    width: 90%;
+    height: auto;
 }
 
-.imgPeople--reverse {
+.people--reverse {
     flex-direction: row-reverse;
+    text-align: right;
 }
 
 .people_presentation {
     display: flex;
     flex-direction: column;
-    width: 50%
+    width: 75%;
+    padding-left: 2rem;
+
+
+
 }

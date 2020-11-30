@@ -6,29 +6,18 @@ peopleController = {
     profs: async (request, response, next) => {
 
         const profs = await People.findAll();
-        for (let i = 0; i < profs.length; i++) {
+        //console.log(profs[0].presentation);
 
-            console.log(profs[i++].photo);
-            if (profs[i]) {
-                console.log(profs[i].photo)
-            }
-
-            console.log('--------------')
-        }
-
-
-
+        let prez = [];
 
 
         response.render('pres', {
-            profs
+            profs,
+            prez
+
         })
-
-
-
-
-    },
-    visitors: {}
+    }
+    //visitors: {}
 };
 
 module.exports = peopleController;

@@ -4,7 +4,11 @@ const {
 } = require('sequelize');
 const sequelize = require('../database');
 
-class People extends Model {}
+class People extends Model {
+    getFullname() {
+        return `${this.firstname} ${this.lastname}`;
+    }
+}
 
 People.init({
     firstname: {
