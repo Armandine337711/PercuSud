@@ -25,13 +25,26 @@ Article.belongsTo(Page, {
 
 Role.hasMany(People, {
     foreignKey: 'role_id',
-    as: 'choucroute'
+    as: 'guy'
 });
 
 People.belongsTo(Role, {
     foreignKey: 'role_id',
-    as: 'pdt'
+    as: 'role'
 });
+
+// ----------------
+// Relation people-page
+// ----------------
+Page.hasMany(People, {
+    foreignKey: 'page_id',
+    as: 'guys'
+});
+
+People.belongsTo(Page, {
+    foreignKey: 'page_id',
+    as: 'page'
+})
 
 // ----------------
 // Relation student-formule

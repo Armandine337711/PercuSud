@@ -5,8 +5,10 @@ const {
 peopleController = {
     profs: async (request, response, next) => {
 
-        const profs = await People.findAll();
-        //console.log(profs[0].presentation);
+        const profs = await People.findAll({
+            include: 'page'
+        });
+        console.log(profs[0]);
 
         let prez = [];
 

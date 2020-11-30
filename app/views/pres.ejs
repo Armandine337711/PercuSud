@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<h1>Les gens</h1>
+<h1><%= profs[0].page.title %></h1>
 
 
 <% for (let i = 0; i < profs.length; i++) { %>
@@ -9,10 +9,21 @@
             class="imgPeople"></p>
 
     <div class="people_presentation">
-        <p class="people_identity"><%= profs[i].firstname %> <%= profs[i].lastname %> </p>
-        <% prez = profs[i++].presentation.split('%');
+        <p class="people_presentation_identity"><%= profs[i].firstname %> <%= profs[i].lastname %> </p>
+        <%# on transforme le texte de présentation en tableau avec split (cela suppose que dans la base de données la fin de paragraphe soit visualsée par un %) %>
+        <% prez = profs[i++].presentation.split('%'); 
         prez.forEach(element => { %>
-        <p><%= element %> </p>
+        <p> <%# je vérifie si ma chaine de caractère commence par http%>
+            <% if (element.indexOf('http') === 1) { %>
+            <%# si oui alors c'est un lien %>
+            <a href="<%= element %>"><%= element %></a>
+            <% } else { %>
+            <%# si non c'est juste du texte %>
+            <%= element %>
+            <% } %>
+
+
+        </p>
         <% }) %>
 
 
@@ -28,10 +39,17 @@
             class="imgPeople"></p>
 
     <div class="people_presentation">
-        <p><%= profs[i].firstname %> <%= profs[i].lastname %> </p>
+        <p class="people_presentation_identity"><%= profs[i].firstname %> <%= profs[i].lastname %> </p>
         <% prez = profs[i].presentation.split('%');
         prez.forEach(element => { %>
-        <p><%= element %> </p>
+        <p> <%# je vérifie si ma chaine de caractère commence par http%>
+            <% if (element.indexOf('http') === 1) { %>
+            <%# si oui alors c'est un lien %>
+            <a href="<%= element %>"><%= element %></a>
+            <% } else { %>
+            <%# si non c'est juste du texte %>
+            <%= element %>
+            <% } %></p>
         <% }) %>
     </div>
 

@@ -179,11 +179,13 @@ p {
 /* PAGES PEOPLE */
 .people {
     display: flex;
+    align-items: center;
     border: solid 2px;
-    margin-top: 2rem;
     width: 80%;
     padding: 2rem;
-    justify-content: start;
+    margin: auto;
+    /* bien mettre le margin-top APRES le margin auto*/
+    margin-top: 2rem;
 }
 
 .imgPeople_container {
@@ -198,7 +200,15 @@ p {
 
 .people--reverse {
     flex-direction: row-reverse;
-    text-align: right;
+
+}
+
+.people_presentation_identity {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 0.4em;
 }
 
 .people_presentation {
