@@ -7,7 +7,7 @@ const sequelize = require('../database');
 class Role extends Model {}
 
 Role.init({
-    identity: {
+    role: {
         type: DataTypes.TEXT,
         allownull: false,
         validate: {

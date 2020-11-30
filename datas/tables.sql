@@ -113,14 +113,14 @@ http://www.sebastiengisbert.com/', 1, 1),
 Après des études musicales au CRR de Toulouse ponctuées par l’obtention d’un 1er prix mention très bien, il obtient le diplôme d’état d’accompagnateur option danse.%
 En parallèle, il suit une formation aux percussions latines (notamment afro-cubaines) auprès de G. Maldonaldo et JC Martinez.%
 En tant qu’interprète, il mène un parcours très éclectique allant de la musique ancienne (ensemble Les Sacqueboutiers) au jazz (Initiative H, Headbangers, Big band...), en passant par le funk, la musique classique (Orchestre National du Capitole de Toulouse), la musique latine (Mecanica loca, Caña brava) ou encore l’électro (Reco-reco).%
-http://www.les-sacqueboutiers.com%', 1, 1),
+http://www.les-sacqueboutiers.com%', 2, 1),
 ('Emilien', 'Prodhomme', 'emilien_prodhomme.jpg', 'Timbalier solo de l’orchestre national du capitole de Toulouse, Professeur à l’Isdat (Toulouse).%
 Originaire de Rennes (35), son apprentissage des percussions l’amène à cotoyer plusieurs pédagogues reconnus parmi lesquels Olivier Fiard (CRR Rennes), Francis Brana (ENM Créteil) et Jean Geoffroy (CNSM de Lyon).%
 Il obtient en 2010 le diplôme de Master d’interprétation (Mention TB à l’unanimité).%
 Passionné par les répertoires symphonique et lyrique, il collabore depuis 2003 avec différents orchestres français.%
 Après avoir occupé pendant quelque mois le poste de percussionniste au sein de l’orchestre symphonique de Saint-Etienne, il est recruté en tant que percussioniste solo (2009) puis timbalier solo (2014) de l’orchestre national du capitole de Toulouse.%
 Par ailleurs, il porte un grand intérêt à la musique de chambre et à la création d’oeuvres nouvelles pour différentes formations.%
-Depuis 2010, il enseigne les timbales et le répertoire orchestral pour percussions au pôle supérieur de Toulouse.%', 1, 1),
+Depuis 2010, il enseigne les timbales et le répertoire orchestral pour percussions au pôle supérieur de Toulouse.%', 2, 1),
 ('Thibault', 'Buchaillet', 'thibault_buchaillet.jpg', 'Percussionniste solo de l’orchestre national du Capitole de Toulouse.%
 Professeur à l’Isdat (pôle supéreur de Toulouse)%
 Né en 1985, Thibault Buchaillet commence la percussion à l’âge de 10 ans au CNR de Nantes dans laclasse d’Hédy Réjiba où il obtiendra son DEM en
@@ -131,7 +131,7 @@ National des Pays de la Loire, Orchestre symphonique de St-Etienne...).%
 Il obtient son master de percussion en juin 2010.%
 Percussionniste au sein de la musique des Equipages de la flotte de Brest puis de Toulon entre 2008 et 2012, il occupe actuellement le poste de
 percussion solo à l’Orchestre National du Capitole de Toulouse.%
-Thibault Buchaillet est également professeur à l''Isdat de Toulouse depuis 2015 et participe à l''académie de cuivres et percussions de Larmor.', 1, 1),
+Thibault Buchaillet est également professeur à l''Isdat de Toulouse depuis 2015 et participe à l''académie de cuivres et percussions de Larmor.', 2, 1),
 ('Nicolas', 'Lamothe', 'nicolas_lamothe.jpg', 'Second percussionniste solo de l''Orchestre Philharmonique de Radio-France, Professeur au conservatoire du 17ème arrondissement de Paris.%
 Né en 1983 dans le sud-ouest de la France, il a étudié les percussions au CNSMDP dans la classe de Michel Cerutti.%
 Il débute sa carrière de musicien au sein de l''Orchestre national de Montpellier, au poste de claviers solo jouant les timbales.%

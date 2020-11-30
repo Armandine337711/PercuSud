@@ -6,9 +6,15 @@ peopleController = {
     profs: async (request, response, next) => {
 
         const profs = await People.findAll({
-            include: 'page'
-        });
-        console.log(profs[0]);
+            where: {
+                role_id: 1
+            },
+            include: ['page']
+
+
+        })
+
+
 
         let prez = [];
 
