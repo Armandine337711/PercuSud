@@ -220,3 +220,16 @@ p {
 
 
 }
+
+
+/* Form */
+
+.label_form {
+    font-size: 1.4rem;
+    text-align: left;
+
+}
+
+.legend_form {
+    font-size: 2rem;
+}

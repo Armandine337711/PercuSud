@@ -4,28 +4,45 @@ const {
 
 peopleController = {
     profs: async (request, response, next) => {
+        try {
 
-        const profs = await People.findAll({
-            where: {
-                role_id: 1
-            },
-            include: ['page']
+            const people = await People.findAll({
+                where: {
+                    role_id: 1
+                },
+                include: ['page']
+            })
+            let prez = [];
 
+            response.render('pres', {
+                people,
+                prez
 
-        })
+            })
+        } catch (error) {
 
+        }
+    },
+    visitors: async (request, response, next) => {
+        try {
 
+            const people = await People.findAll({
+                where: {
+                    role_id: 2
+                },
+                include: ['page']
+            })
+            let prez = [];
 
-        let prez = [];
+            response.render('pres', {
+                people,
+                prez
 
+            })
+        } catch (error) {
 
-        response.render('pres', {
-            profs,
-            prez
-
-        })
+        }
     }
-    //visitors: {}
 };
 
 module.exports = peopleController;

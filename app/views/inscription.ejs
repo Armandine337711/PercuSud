@@ -1,0 +1,62 @@
+<%- include('partials/header') %>
+
+
+<h1>Inscription Edition 2021<h1>
+        <div>
+            <form action="/inscription" method="post">
+                <fieldset>
+                    <legend class="legend_form">L'étudiant</legend>
+                    <div>
+                        <label class="label_form" for="">Prénom</label>
+                        <input type="text" name="firstname" id="firstname" value="" placeholder="Votre prénom">
+                    </div>
+                    <div>
+                        <label class="label_form" for="">Nom de famille</label>
+                        <input type="text" name="lastname" id="lastname" value="" placeholder="Votre nom">
+                    </div>
+                    <div>
+                        <label class="label_form" for="">adresse</label>
+                        <input type="text" name="adress" id="adress" value="" placeholder="Votre adresse">
+                    </div>
+                    <div>
+                        <label class="label_form" for="">Complément d'adresse</label>
+                        <input type="text" name="adress2" id="adress2" value="" placeholder="Complément d'adresse">
+                    </div>
+                    <div>
+                        <label class="label_form" for="">Code postal</label>
+                        <input type="text" name="zip" id="zip" value="" placeholder="Code Postal">
+                    </div>
+                    <div>
+                        <label class="label_form" for="">Ville</label>
+                        <input type="text" name="city" id="city" value="" placeholder="Votre ville">
+                    </div>
+                    <div>
+                        <label class="label_form" for="">Date de naissance</label>
+                        <input type="date" name="birthdate" id="birthdate" value=""
+                            placeholder="Votre date de naissance">
+                    </div>
+                    <div>
+                        <label class="label_form" for="">Téléphone</label>
+                        <input type="tel" name="phone" id="phone" value="" placeholder="Votre téléphone">
+                    </div>
+                    <div>
+                        <label class="label_form" for="">Email</label>
+                        <input type="email" name="mail" id="mail" value="" placeholder="Votre email">
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend class="legend_form">Le choix de la formule</legend>
+
+                </fieldset>
+
+                <fieldset disabled="disabled">
+                    <legend class="legend_form">Les parents</legend>
+                </fieldset>
+
+            </form>
+        </div>
+
+
+
+        <%- include('partials/footer') %>

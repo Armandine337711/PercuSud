@@ -83,7 +83,8 @@ CREATE TABLE IF NOT EXISTS "student"(
 
 /* Remplissage des tables */
 INSERT INTO "page"("title") VALUES
-    ('Portraits de Profs');
+    ('Portraits de Profs'),
+    ('Les Invités de l''Académie');
 
 INSERT INTO "role"("role") VALUES 
 ('prof'),
