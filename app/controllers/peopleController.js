@@ -1,21 +1,16 @@
-const {
-    People
-} = require("../models")
+const peopleDataMapper = require('../dataMappers/peopleDataMapper');
 
-peopleController = {
-    profs: async (request, response, next) => {
+const peopleController = {
+    getProfs: async (request, response, next) => {
+
         try {
 
-            const people = await People.findAll({
-                where: {
-                    role_id: 1
-                },
-                include: ['page']
-            })
-            let prez = [];
+            const profs = await peopleDataMapper.getAllProfs();
 
+            console.log(profs.firstname);
+            let prez = [];
             response.render('pres', {
-                people,
+                people: profs,
                 prez
 
             })
@@ -23,26 +18,26 @@ peopleController = {
 
         }
     },
-    visitors: async (request, response, next) => {
-        try {
+    // visitors: async (request, response, next) => {
+    //     try {
 
-            const people = await People.findAll({
-                where: {
-                    role_id: 2
-                },
-                include: ['page']
-            })
-            let prez = [];
+    //         const people = await People.findAll({
+    //             where: {
+    //                 role_id: 2
+    //             },
+    //             include: ['page']
+    //         })
+    //         let prez = [];
 
-            response.render('pres', {
-                people,
-                prez
+    //         response.render('pres', {
+    //             people,
+    //             prez
 
-            })
-        } catch (error) {
+    //         })
+    //     } catch (error) {
 
-        }
-    }
+    //     }
+    // }
 };
 
 module.exports = peopleController;

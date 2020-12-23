@@ -7,10 +7,11 @@ const userController = require('./controllers/userController.js');
 
 router.get('/', mainController.home);
 
-router.get('/profs', peopleController.profs);
-router.get('/visiteurs', peopleController.visitors);
+router.get('/profs', peopleController.getProfs);
+//router.get('/visiteurs', peopleController.visitors);
 
 router.get('/inscription', userController.inscription);
+router.post('inscription/:idFormule(\\^d{1-3})', userController.addToCart);
 
 
 

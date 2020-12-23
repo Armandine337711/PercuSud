@@ -63,7 +63,7 @@ body {
 
 
 .header {
-    width: 105%;
+    width: 100%;
     height: auto;
 }
 
@@ -73,9 +73,10 @@ h1 {
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    padding: 0.5em;
+
     font-family: 'Architects Daughter', cursive;
     font-weight: 900;
+    height: 5rem;
 }
 
 
@@ -108,10 +109,8 @@ h1 {
 }
 
 .nav {
-
     display: flex;
     flex-direction: column;
-
 }
 
 .nav-links {
@@ -132,11 +131,10 @@ h1 {
 
 }
 
-.nav-items-link {
+.nav-items-link,
+.formule_link {
     color: #fff;
     text-decoration: none;
-
-
 }
 
 .bull {
@@ -166,7 +164,12 @@ main {
     font-family: 'Architects Daughter', cursive;
     padding: 0.7rem;
     font-size: 1.5em;
+}
 
+.main_content {
+    padding: 0.5em;
+    background-image: url(../picture/timbales.png);
+    height: 100vh;
 }
 
 
@@ -186,6 +189,7 @@ p {
     margin: auto;
     /* bien mettre le margin-top APRES le margin auto*/
     margin-top: 2rem;
+    font-size: 1.2em;
 }
 
 .imgPeople_container {
@@ -224,12 +228,95 @@ p {
 
 /* Form */
 
-.label_form {
-    font-size: 1.4rem;
-    text-align: left;
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
 
+.form_part {
+    display: flex;
+    justify-content: center;
+}
+
+.form_input_left {
+    width: 280px;
+}
+
+.form_input_right {
+    width: 250px;
 }
 
 .legend_form {
     font-size: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.form_left label {
+    width: 290px;
+}
+
+.form_left_div,
+.form_right_div {
+    height: 1.5em;
+    margin: 0.4em;
+    display: flex;
+}
+
+.form_left,
+.form_right {
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.form_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.form_right label {
+    width: 200px;
+
+}
+
+input {
+    border-radius: 15px;
+    border: solid black 1px;
+    padding-left: 1em;
+}
+
+.form_formule {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.form_formule_choice {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../picture/FOND_BLEU.jpg);
+    width: 20%;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    color: #ffebcf;
+    font-size: 1.2rem;
+
+}
+
+.form_formule_choice img {
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.formule_type {
+    margin-bottom: 2rem;
+
 }
