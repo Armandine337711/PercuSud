@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node-dev index.js"
+    "start": "node-dev --clear index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Armandine337711/PercuSud/issues"
   },
-  "homepage": "https://github.com/Armandine337711/PercuSud#readme"
+  "homepage": "https://github.com/Armandine337711/PercuSud#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "pg": "^8.5.1"
+  }
 }
