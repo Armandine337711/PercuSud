@@ -9,23 +9,23 @@ app.set('view engine', 'ejs');
 app.set('views', './app/views')
 
 app.use(express.static('./app/public'))
+/*
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: true,
+    saveUninitialized: true
 
-// app.use(session({
-//     secret: process.env.SESSION_SECRET,
-//     resave: true,
-//     saveUninitialized: true
+}));
+app.use((request, _, next) => {
+    if (!request.session.cart) {
+        console.log('Création du panier en session');
+        request.session.cart = [];
+    } else {
+        console.log('cart existe déjà en session');
+    }
 
-// }));
-// app.use((request, _, next) => {
-//     if (!request.session.cart) {
-//         console.log('Création du panier en session');
-//         request.session.cart = [];
-//     } else {
-//         console.log('cart existe déjà en session');
-//     }
-
-//     next();
-// });
+    next();
+});*/
 
 app.use(router);
 
