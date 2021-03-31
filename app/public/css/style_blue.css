@@ -140,6 +140,7 @@ h1 {
 .bull {
     display: block;
     position: fixed;
+    z-index: 0;
     opacity: 0.5;
 }
 
@@ -240,13 +241,13 @@ p {
     justify-content: center;
 }
 
-.form_input_left {
+.form_input {
     width: 280px;
 }
-
+/*
 .form_input_right {
     width: 250px;
-}
+}*/
 
 .legend_form {
     font-size: 2rem;
@@ -261,8 +262,7 @@ p {
     width: 290px;
 }
 
-.form_left_div,
-.form_right_div {
+.form_div {
     height: 1.5em;
     margin: 0.4em;
     display: flex;
@@ -319,4 +319,19 @@ input {
 .formule_type {
     margin-bottom: 2rem;
 
+}
+
+@media (max-width: 1600px){
+ 
+.menu,.bull {
+
+    width: 175px;
+    
+}
+.nav-items {
+    font-size: 1.1rem;
+}
+.main{
+    margin-left: 175px;
+}
 }
