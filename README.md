@@ -1,17 +1,13 @@
-# Cahier des charges - PercuSud
+# README
 
-- Une page de présentation de l'académie
-- Un formulaire de contact
-- un formulaire d'inscription
+## PERCUSUD
 
-## Use Cases
+### Initialisation du projet
 
-### Définition des utilisateurs
+```bash
+npm install
+```
 
-- Visiteur
-- Administrateur
+Créer une base de données postgreSQL et importer le fichier /datas/tables.sql
 
-### On veut
-
-|#|
-
+Créer le .env
