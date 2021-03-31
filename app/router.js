@@ -11,7 +11,9 @@ router.get('/profs', peopleController.getProfs);
 //router.get('/visiteurs', peopleController.visitors);
 
 router.get('/inscription', userController.inscription);
-router.post('inscription/:idFormule(\\^d{1-3})', userController.addToCart);
+//router.post('inscription/:idFormule(\\^d{1-3})', userController.addToCart);
+
+router.post('/resume', userController.resume);
 
 
 

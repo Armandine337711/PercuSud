@@ -244,10 +244,6 @@ p {
 .form_input {
     width: 280px;
 }
-/*
-.form_input_right {
-    width: 250px;
-}*/
 
 .legend_form {
     font-size: 2rem;
@@ -301,6 +297,7 @@ input {
 .form_formule_choice {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-image: url(../picture/FOND_BLEU.jpg);
     width: 20%;
     border-radius: 50%;
@@ -316,9 +313,26 @@ input {
     margin-top: 2px;
 }
 
-.formule_type {
+.formule_label {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
+}
+.form_button{
+    margin: 3rem auto;
+    background-color: #b5c7f7;
+    width : 25%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: block;
+    
+    
+}
+
+.first_line{
+    margin-top: 2rem;
 }
 
 @media (max-width: 1600px){

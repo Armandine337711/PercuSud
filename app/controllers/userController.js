@@ -3,8 +3,10 @@ const userController = {
         response.render('inscription')
 
     },
-    addToCart: (request, response, next) => {
-
+    resume:(request, response, next) => {
+        const newMusician = request.body;
+        console.log(newMusician);
+        response.render('resume', {newMusician})
     }
 };
 

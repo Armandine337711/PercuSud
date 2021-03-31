@@ -6,9 +6,11 @@ const PORT = process.env.PORT || 4242;
 //const session = express.session;
 
 app.set('view engine', 'ejs');
-app.set('views', './app/views')
+app.set('views', './app/views');
 
-app.use(express.static('./app/public'))
+app.use(express.static('./app/public'));
+
+app.use(express.urlencoded({extended:true}));
 /*
 app.use(session({
     secret: process.env.SESSION_SECRET,

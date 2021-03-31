@@ -1,7 +1,44 @@
 <%- include('partials/header') %>
 
     <!-- affichage des données de la page d'inscription avec la formule choisie-->
+    <h1>Résumé des informations d'inscription</h1>
+    <p class="first_line">
+        <%= newMusician.firstname %>
+            <%= newMusician.lastname %>
 
+    </p>
+    <p class="first_line">
+        <%= newMusician.adress %>
+    </p>
+    <p>
+        <% if (newMusician.adress2){ %>
+            <%= newMusician.adress2 %>
+                <% } %>
+
+    </p>
+    <p>
+        <%= newMusician.zip %>
+            <%= newMusician.city %>
+    </p>
+    <p class="first_line">
+        <%= newMusician.mail %>
+    </p>
+    <p>
+        <%= newMusician.phone %>
+    </p>
+    <p class="first_line">
+        <% if (newMusician.formule==='half' ){ %>
+            Formule "1/2 pension" à 350€
+            <% } else if (newMusician.formule==='full' ){%>
+                Formule "Pension complète" à 550€
+
+                <% } else if (newMusician.formule==='workshop' ){%>
+                    Formule "Pratique amateure" à 60€
+                    <%} %>
+
+    </p>
+    <p>ici on ajoutera un bouton paypal, ou bien le rib, ou bien l'adresse pour envoyer le règlement par chèque</p>
     <!-- affichage bouton paypal-->
+    <input class="first_line" type="submit" value="Confirmer">
 
     <%- include('partials/footer') %>

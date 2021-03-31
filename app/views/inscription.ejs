@@ -66,40 +66,39 @@
                     <div class="form_formule">
 
                         <div class="form_formule_choice">
-                            <a class="formule_link" href="#">
-                                <img class="minilogo" src="/picture/miniLogo.png" alt="">
+                            <label class="formule_label" for="half">
+                                <img class="minilogo" src="/picture/miniLogo.png" alt="Formule demi-pension 350€">
                                 <p>350€</p>
-                                <p>Demi-pension</p>
-                            </a>
-                        </div>
-                        <div class="form_formule_choice">
-                            <a class="formule_link" href="#">
-                                <img class="minilogo" src="/picture/miniLogo.png" alt="">
-                                <p>550€</p>
-                                <p>Pension complète</p>
-                            </a>
+                                <p>Demi<br>pension</p>
+                                <input type="radio" id="half" name="formule" value="half">
+                            </label>
 
                         </div>
                         <div class="form_formule_choice">
-                            <a class="formule_link" href="#"><img class="minilogo" src="/picture/miniLogo.png" alt="">
+                            <label class="formule_label" for="full">
+                                <img class="minilogo" src="/picture/miniLogo.png" alt="formule pension complète 550€">
+                                <p>550€</p>
+                                <p>Pension<br>complète</p>
+                                <input type="radio" id="full" name="formule" value="full">
+                            </label>
+
+                        </div>
+                        <div class="form_formule_choice">
+                            <label class="formule_label" for="workshop">
+                                <img class="minilogo" src="/picture/miniLogo.png" alt="formule pratique amateur 60€">
                                 <p class="formule_price">60€</p>
                                 <p class="formule_type"> Pratique amateure</p>
-                            </a>
+                                <input type="radio" id="workshop" name="formule" value="workshop">
+                            </label>
 
 
                         </div>
                     </div>
                 </fieldset>
-                <!--
-    <fieldset>
-                    <legend class="legend_form">Les parents</legend>
-                </fieldset>
-
--->
-
+                <input type="submit" value="Valider" class="form_button">
             </form>
         </div>
 
     </div>
-    scr
+
     <%- include('partials/footer') %>
