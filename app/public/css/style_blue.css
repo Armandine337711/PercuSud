@@ -335,6 +335,10 @@ input {
     margin-top: 2rem;
 }
 
+.resume{
+    margin-left: 10rem;
+}
+
 @media (max-width: 1600px){
  
 .menu,.bull {

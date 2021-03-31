@@ -2,31 +2,31 @@
 
     <!-- affichage des données de la page d'inscription avec la formule choisie-->
     <h1>Résumé des informations d'inscription</h1>
-    <p class="first_line">
+    <p class="resume first_line">
         <%= newMusician.firstname %>
             <%= newMusician.lastname %>
 
     </p>
-    <p class="first_line">
+    <p class="resume first_line">
         <%= newMusician.adress %>
     </p>
-    <p>
+    <p class="resume">
         <% if (newMusician.adress2){ %>
             <%= newMusician.adress2 %>
                 <% } %>
 
     </p>
-    <p>
+    <p class="resume">
         <%= newMusician.zip %>
             <%= newMusician.city %>
     </p>
-    <p class="first_line">
+    <p class="resume first_line">
         <%= newMusician.mail %>
     </p>
-    <p>
+    <p class="resume">
         <%= newMusician.phone %>
     </p>
-    <p class="first_line">
+    <p class="resume first_line">
         <% if (newMusician.formule==='half' ){ %>
             Formule "1/2 pension" à 350€
             <% } else if (newMusician.formule==='full' ){%>
@@ -37,8 +37,9 @@
                     <%} %>
 
     </p>
-    <p>ici on ajoutera un bouton paypal, ou bien le rib, ou bien l'adresse pour envoyer le règlement par chèque</p>
+    <p class="resume first_line">ici on ajoutera un bouton paypal, ou bien le rib, ou bien l'adresse pour envoyer le
+        règlement par chèque</p>
     <!-- affichage bouton paypal-->
-    <input class="first_line" type="submit" value="Confirmer">
+    <input class="resume first_line" type="submit" value="Confirmer">
 
     <%- include('partials/footer') %>
