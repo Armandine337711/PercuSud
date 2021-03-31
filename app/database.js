@@ -1,5 +1,14 @@
-const pg = require('pg');
+const {
+    Pool
+} = require('pg');
 
-const client = new pg.Client(process.env.PG_URL);
-client.connect();
-module.exports = client;
+const pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    }
+});
+
+// Pas besoin de connect car c'est le Pool qui va se charger d'établir les connexions
+
+module.exports = pool;
